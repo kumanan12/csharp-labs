@@ -83,7 +83,67 @@ namespace DataTypes
             {
                 Console.WriteLine("Unable to report the measurement.");
             }
+            
+            //first challenge
+            Console.WriteLine("");
+            string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+            decimal total = 0m;
+            string Message = "";
+
+            foreach (var vaLue in values)
+            {
+                decimal number;
+                if (decimal.TryParse(vaLue, out number))
+                {
+                    total += number;
+                } else
+                {
+                    Message += vaLue;
+                }
+            }
+
+            Console.WriteLine($"Message: {Message}");
+            Console.WriteLine($"Total: {total}");
         }
+
+        /* Console.WriteLine("");
+        string[] pallets = { "B14", "A11", "B12", "A13" };
+        Console.WriteLine("Sorted...");
+        Array.Sort(pallets);
+        foreach(var pallet in pallets)
+        {
+            Console.WriteLine($"-- {pallet}");
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("Reversed...");
+        Array.Reverse(pallets);
+        foreach(var pallet in pallets)
+        {
+            Console.WriteLine($"-- {pallet}");
+        }
+        Console.WriteLine("");
+
+        Array.Clear(pallets, 0, 2);
+        Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
+        foreach(var pallet in pallets)
+        {
+            Console.WriteLine($"-- {pallet}");
+        }
+
+        Console.WriteLine("");
+        Array.Resize(ref pallets, 6);
+        Console.WriteLine($"Resizing 6 ... count: {pallets.Length}");
+
+        pallets[4] = "C01";
+        pallets[5] = "C02";
+
+        foreach (var pallet in pallets)
+        {
+            Console.WriteLine($"-- {pallet}");
+        }
+ */
 
     }
 }
