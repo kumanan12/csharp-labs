@@ -142,8 +142,10 @@ namespace DataTypes
         foreach (var pallet in pallets)
         {
             Console.WriteLine($"-- {pallet}");
-        }
- */
+        }*/
+        string pangram = "The quick brown fox jumps over the lazy dog";
+        char[] pangramArray = pangram.ToArray();
+        Console.WriteLine(pangramArray);
 
     }
 }
