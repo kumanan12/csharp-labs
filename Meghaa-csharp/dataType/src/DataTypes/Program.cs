@@ -143,9 +143,13 @@ namespace DataTypes
         {
             Console.WriteLine($"-- {pallet}");
         }*/
-        string pangram = "The quick brown fox jumps over the lazy dog";
-        char[] pangramArray = pangram.ToArray();
-        Console.WriteLine(pangramArray);
+        
+        string parantheses = "Find what is (inside the parentheses)";
+
+        int openingPosition = parantheses.IndexOf('(');
+        int closingPosition = parantheses.IndexOf(')');
+        int length = closingPosition - openingPosition;
+        Console.WriteLine(parantheses.Substring(openingPosition , length));
 
     }
 }
