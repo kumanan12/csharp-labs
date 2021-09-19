@@ -144,12 +144,26 @@ namespace DataTypes
             Console.WriteLine($"-- {pallet}");
         }*/
         
+        Console.WriteLine("");
         string parantheses = "Find what is (inside the parentheses)";
 
         int openingPosition = parantheses.IndexOf('(');
         int closingPosition = parantheses.IndexOf(')');
         int length = closingPosition - openingPosition;
         Console.WriteLine(parantheses.Substring(openingPosition , length));
+
+        Console.WriteLine("");
+        string message = "What is the value <span>between the tags</span>?";
+
+        int openingPosition = message.IndexOf("<span>");
+        int closingPosition = message.IndexOf("</span>");
+
+        Console.WriteLine(openingPosition);
+        Console.WriteLine(closingPosition);
+
+        openingPosition += 6;
+        int length = closingPosition - openingPosition;
+        Console.WriteLine(message.Substring(openingPosition, length));
 
     }
 }
