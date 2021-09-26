@@ -19,8 +19,8 @@ namespace GradeBook
         {
             var result = new Statistics();
             result.Average = 0.0;
-            var result.High = double.MinValue();
-            var result.Low = double.MaxValue(); 
+            result.High = double.MinValue();
+            result.Low = double.MaxValue(); 
             
             foreach (var grade in grades)
            {
