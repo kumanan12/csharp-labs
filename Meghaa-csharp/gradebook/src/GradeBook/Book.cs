@@ -4,9 +4,32 @@ namespace GradeBook
 {
     public delegate void GradeAddedDelegate(object sender,EventArgs args);
     
-    public class Book
+    public class NamedObject
     {
-    public Book(string name)
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+        
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+   
+    public abstract class BookBase : NamedObject
+    {
+        public BookBase(string name) : base(name)
+        {
+        }
+
+        public abstract void AddGrade(double grade);
+    }
+  
+   public class Book : BookBase
+    {
+    public Book(string name) : base(name)
         {
             grades = new List<double>();
             Name = name;
@@ -89,12 +112,6 @@ namespace GradeBook
         } 
 
        private List<double> grades;
-
-        public string Name
-        {
-            get; 
-            set;
-        }
 
        public const string CATEGORY = "Science";
        
