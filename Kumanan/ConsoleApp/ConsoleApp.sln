@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D8BBA687-2987-47B5-BE1E-534EB1A47F7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp1\ConsoleApp.csproj", "{D8BBA687-2987-47B5-BE1E-534EB1A47F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBlazor.Server", "..\NinjaBlazor\Server\NinjaBlazor.Server.csproj", "{9BEE1299-E09A-40E0-AEF6-DDA087AC0FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceLib", "FinanceLib\FinanceLib.csproj", "{F6B200DD-03C3-49F2-9720-359047465B69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBlazor.Client", "..\NinjaBlazor\Client\NinjaBlazor.Client.csproj", "{928B39FA-33CA-446B-A361-33356E56EB0B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjaBlazor.Shared", "..\NinjaBlazor\Shared\NinjaBlazor.Shared.csproj", "{319CF04A-F276-4763-AE90-14C56793196C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HB.DataAccess", "HB.DataAccess\HB.DataAccess.csproj", "{F0E7F14A-EC82-4839-9A81-79C36F85DD48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		{D8BBA687-2987-47B5-BE1E-534EB1A47F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8BBA687-2987-47B5-BE1E-534EB1A47F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8BBA687-2987-47B5-BE1E-534EB1A47F7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BEE1299-E09A-40E0-AEF6-DDA087AC0FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BEE1299-E09A-40E0-AEF6-DDA087AC0FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BEE1299-E09A-40E0-AEF6-DDA087AC0FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BEE1299-E09A-40E0-AEF6-DDA087AC0FE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{928B39FA-33CA-446B-A361-33356E56EB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{928B39FA-33CA-446B-A361-33356E56EB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{928B39FA-33CA-446B-A361-33356E56EB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{928B39FA-33CA-446B-A361-33356E56EB0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{319CF04A-F276-4763-AE90-14C56793196C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{319CF04A-F276-4763-AE90-14C56793196C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{319CF04A-F276-4763-AE90-14C56793196C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{319CF04A-F276-4763-AE90-14C56793196C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B200DD-03C3-49F2-9720-359047465B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B200DD-03C3-49F2-9720-359047465B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B200DD-03C3-49F2-9720-359047465B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B200DD-03C3-49F2-9720-359047465B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E7F14A-EC82-4839-9A81-79C36F85DD48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E7F14A-EC82-4839-9A81-79C36F85DD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E7F14A-EC82-4839-9A81-79C36F85DD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E7F14A-EC82-4839-9A81-79C36F85DD48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
